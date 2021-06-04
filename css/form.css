@@ -7,9 +7,26 @@ body {
 }
 
 h1 {
-    font-size: 1.429em;
-    padding: 10px 15px 7px;
+    font-size: 32px;
+    padding: 10px 15px 16px;
     border-bottom: 1px solid #e9e9e9;
+    display: flex;
+    align-items: center;
+    color: #194173;
+    font-weight: 900;
+    font-family: tahoma;
+    line-height: 78px;
+}
+
+h1::before {
+    background-image: url(https://discourse.adc.arm.gov/uploads/default/original/1X/ee3632e….png);
+    background-repeat: no-repeat;
+    background-size: 143px;
+    background-position: 0 12px;
+    display: inline-block;
+    width: 138px;
+    height: 52px;
+    content: "";
 }
 
 form {
@@ -18,6 +35,10 @@ form {
     width: 710px;
     border: 1px solid #e9e9e9;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
+}
+
+form::before {
+    content: "Please log in with your ARM LDAP account credentials:";
 }
 
 input {
@@ -34,7 +55,8 @@ input {
 }
 
 #username {
-    margin-left: 27px
+    margin-left: 27px;
+    margin-top: 19px;
 }
 
 button {
