@@ -8,23 +8,25 @@ body {
 
 h1 {
     font-size: 32px;
-    padding: 10px 15px 16px;
+    padding: 0px 15px 16px;
     border-bottom: 1px solid #e9e9e9;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #194173;
     font-weight: 900;
     font-family: tahoma;
-    line-height: 78px;
+    line-height: 48px;
+    margin-left: -15px;
 }
 
 h1::before {
     background-image: url(https://discourse.adc.arm.gov/uploads/default/original/1X/ee3632e099d25f6d95840aa02597febd3d00b088.png);
     background-repeat: no-repeat;
     background-size: 143px;
-    background-position: 0 12px;
+    background-position: -5px 12px;
     display: inline-block;
-    width: 138px;
+    width: 140px;
     height: 52px;
     content: "";
 }
@@ -38,7 +40,7 @@ form {
 }
 
 form::before {
-    content: "Please log in with your ARM LDAP account credentials:";
+	content: url('data:image/svg+xml;%20charset=utf8,%20%3Csvg%20width%3D%22650px%22%20height%3D%22150px%22%0A%20%20%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%0A%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%20x%3D%220%22%20y%3D%220%22%3E%0A%09%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22font-family%3A%20Helvetica%3B%20font-size%3A%2012px%3B%20width%3D100%25%3B%22%3E%0A%09%20%20%20%3Cp%3EThe%20ARM%20Discussion%20Forum%20is%20an%20open%20forum%20for%20discussing%20topics%20related%20to%20the%20Department%20of%20Energy%E2%80%99s%20%3Ca%20href%3D%22https%3A%2F%2Fwww.arm.gov%2F%22%3EAtmospheric%20Radiation%20Measurement%20facility.%3C%2Fa%3E%20This%20is%20an%20open%20forum%20for%20users%20to%20read%20and%20contribute%2C%20and%20it%20is%20of%20interest%20to%20anybody%20interested%20in%20ARM%E2%80%99s%20data%20products%2C%20field%20campaigns%2C%20and%20related%20topics.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%3Cp%3EAccess%20is%20via%20one%E2%80%99s%20ARM%20LDAP%20account*%2C%20which%20is%20the%20same%20account%20used%20when%20downloading%20ARM%20data.%20The%20first%20time%20logging%20into%20the%20forum%2C%20users%20will%20also%20need%20to%20be%20admitted%20by%20a%20site%20moderator.%20Subsequent%20logins%20will%20only%20need%20the%20LDAP%20password.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%3Cp%3E%3Cstrong%3EPlease%20log%20in%20with%20your%20ARM%20LDAP%20account%20credentials%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%09%3C%2Fdiv%3E%0A%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E');
 }
 
 form::after {
@@ -60,7 +62,7 @@ input {
 
 #username {
     margin-left: 27px;
-    margin-top: 19px;
+    margin-top: 5px;
 }
 
 button {
@@ -72,7 +74,8 @@ button {
     font-size: 1.143em;
     line-height: 15px;
     display: block;
-    margin-bottom: 19px;
+    margin-top: 6px;
+    margin-bottom: 28px;
 }
 
 label:before {
