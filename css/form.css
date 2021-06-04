@@ -19,7 +19,7 @@ h1 {
 }
 
 h1::before {
-    background-image: url(https://discourse.adc.arm.gov/uploads/default/original/1X/ee3632e….png);
+    background-image: url(https://discourse.adc.arm.gov/uploads/default/original/1X/ee3632e099d25f6d95840aa02597febd3d00b088.png);
     background-repeat: no-repeat;
     background-size: 143px;
     background-position: 0 12px;
@@ -39,6 +39,10 @@ form {
 
 form::before {
     content: "Please log in with your ARM LDAP account credentials:";
+}
+
+form::after {
+	content: url('data:image/svg+xml;%20charset=utf8,%20%3Csvg%20width%3D%22800px%22%20height%3D%2220%22%0A%20%20%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%0A%20%3CforeignObject%20width%3D%22800px%22%20height%3D%22100%25%22%20x%3D%220%22%20y%3D%220%22%3E%0A%09%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22font-family%3A%20Helvetica%3B%20font-size%3A%2012px%3B%20width%3D100%25%3B%22%3E%0A%09%09*To%20register%20for%20an%20ARM%20account%2C%20go%20to%20%3Cstrong%3Ehttps%3A%2F%2Fadc.arm.gov%2Farmuserreg%2F%23%2Fnew%3C%2Fstrong%3E%0A%09%3C%2Fdiv%3E%0A%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E');
 }
 
 input {
@@ -68,6 +72,7 @@ button {
     font-size: 1.143em;
     line-height: 15px;
     display: block;
+    margin-bottom: 19px;
 }
 
 label:before {
