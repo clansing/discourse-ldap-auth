@@ -40,5 +40,15 @@ See this discussion for  more info on using svg images to render html (there are
 
 https://stackoverflow.com/questions/32870788/css-using-raw-svg-in-the-url-parameter-of-a-background-image-in-ie
 
+## How is this plugin added to Discourse?
+1. ssh to discourse.adc.arm.gov using the cert you got from Pete
+2. Follow these instructions: https://meta.discourse.org/t/install-plugins-in-discourse/19157
+
 ## How to redploy this plugin on the server
-1. ssh to discourse.adc.arm.gov
+1. ssh to discourse.adc.arm.gov using the cert you got from Pete
+2. Run these commands
+   ```bash
+   sudo bash
+   cd /var/discourse
+   ./launcher rebuild app
+   ```
