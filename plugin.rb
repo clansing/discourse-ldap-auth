@@ -1,6 +1,6 @@
 # name:ldap
 # about: A plugin to provide ldap authentication.
-# version: 0.4.1
+# version: 0.5.0
 # authors: Jon Bake <jonmbake@gmail.com>
 
 enabled_site_setting :ldap_enabled
@@ -13,7 +13,7 @@ gem 'omniauth-ldap', '1.0.5'
 require 'yaml'
 require_relative 'lib/ldap_user'
 
-class LDAPAuthenticator < ::Auth::Authenticator
+class ::LDAPAuthenticator < ::Auth::Authenticator
   def name
     'ldap'
   end
@@ -79,11 +79,7 @@ class LDAPAuthenticator < ::Auth::Authenticator
   end
 end
 
-auth_provider title: 'with LDAP',
-  message: 'Log in with your LDAP credentials',
-  frame_width: 920,
-  frame_height: 800,
-  authenticator: LDAPAuthenticator.new
+auth_provider authenticator: LDAPAuthenticator.new
 
 register_css <<CSS
   .btn {

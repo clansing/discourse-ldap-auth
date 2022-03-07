@@ -1,3 +1,6 @@
+[![CI](https://github.com/jonmbake/discourse-ldap-auth/workflows/CI/badge.svg)](https://github.com/jonmbake/discourse-ldap-auth/actions?query=workflow%3ACI)
+[![CodeQL Scan](codeql-scan.svg)](https://github.com/jonmbake/discourse-ldap-auth/security/code-scanning?query=tool%3ACodeQL)
+
 # discourse-ldap-auth
 
 A [Discourse](https://github.com/discourse/discourse) plugin to enable LDAP/ActiveDirectory authentication.
@@ -54,6 +57,8 @@ rspec
 ```
 
 ## Version History
+
+[0.5.0](https://github.com/jonmbake/discourse-ldap-auth/tree/v0.5.0)- Remove call to deprecated Discourse code from [FEATURE: Use full page redirection for all external auth methods](https://github.com/discourse/discourse/pull/8092)
 
 [0.4.1](https://github.com/jonmbake/discourse-ldap-auth/tree/v0.4.1)- Make LDAP Password field secret
 
